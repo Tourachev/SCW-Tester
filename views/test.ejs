@@ -1,0 +1,81 @@
+<% include partials/header.ejs %>
+
+<div class="wrapper">
+
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/img/img2.svg" alt="" id="navLogo" class=" ">
+        </div>
+        <ul class="list-unstyled components" >
+            <li>
+                <a href="index.ejs"> <i class="fas fa-home"></i> &nbsp Home</a>
+            </li>
+            <li class="nav-item navLink " id="navTestButton">
+                <a class="nav-link" > <i class="fas fa-edit"></i> &nbsp Testing <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item navLink" id="navLearnButton">
+                <a class="nav-link" > <i class="fas fa-book"></i> &nbsp Learning</a>
+            </li>
+            <li class="nav-item navLink"id="navDocButton">
+                <a class="nav-link"  > <i class="fas fa-download"></i> &nbsp Documents</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-info-circle"></i> &nbsp About</a>
+            </li>
+
+            <li>
+                <a href="#"><i class="fas fa-envelope"></i> &nbsp Contact</a>
+            </li>      
+            <li>
+                <a href="javascript:history.back()"><i class="fas fa-arrow-left"></i> &nbsp Back</a></a>
+            </li>  
+        </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="contentNav">
+        <div id="testContent">
+            <div class="content">
+                <h2 class="pageHeader darkFont fadeIn">Test Section</h2>
+                <hr>
+                <!-- <h2 class="darkFont">Lorem Ipsum Dolor</h2> -->
+                <p class="darkFont fadeIn">Here you can take a generated Seabee Combat Warfare test. The questions encompass all areas of the SCW Personal Qualification Standard. At this moment the quiz is set to be 100 questions that are randomly picked from a database. Currently the quiz is not timed. Once you hit submit you will get the correct amount of answers. Good Luck!</p>
+                <hr>
+                <h3 id="timer" class="invisible"> You have <span id="time"></span> minutes left!</h3>
+                <button id="generate" class="btn btn-dark btn-lg">Generate Test</button>   
+                <br>
+                <div id="accordion" ></div>
+                <button id="submitButton" class="invisible btn btn-dark btn-lg">Submit</button>
+                <hr>
+                <div id="results"></div>
+            </div>
+        </div>
+
+        <div id="learnContent">
+            <div class="pageBlock content">
+                <h2 class="pageHeader darkFont fadeIn">Learning Section</h2>
+                <hr>
+                
+                <h3>Lorem Ipsum Dolor</h3>
+                <p class="fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div id="docuContent">
+            <div class="pageBlock content">
+                <h2 class="pageHeader darkFont fadeIn">Document Downloads</h2>
+                <hr>
+
+                <p>Below are several links to download useful files for your studies:</p>
+                
+                <h4 class="fadeIn"><a href="" class="activeHover">Seabee Combat Warfare Vol.1</a></h3>
+                <h4 class="fadeIn"><a href="" class="activeHover">Seabee Combat Warfare Vol.2</a></h3>
+                <h4 class="fadeIn"><a href="" class="activeHover">SCW PQS</a></h3>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<% include partials/footer.ejs %>

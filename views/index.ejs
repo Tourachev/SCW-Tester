@@ -1,0 +1,168 @@
+<% include partials/header.ejs %>
+
+<div id="indexBody">
+	<div id="index-left-block">
+		<div id="index-lb-column">
+			<div id="left-column-top">
+				<img src="../assets/img/img2.svg" id="leftNavSeabee">
+
+				<h2 id="leftHeader">SEABEE COMBAT WARFARE <br>TRAINING TOOL</h2>
+			</div>
+			<div id="menu">
+				<a class="nav-link hvr-icon-back" id="navHomeButton"> <i class="fas fa-home hvr-icon"></i> &nbsp HOME</a>
+
+				<hr class="sidebar-hr">
+
+				<a class="nav-link hvr-icon-back" id="navTestButton"> <i class="fas fa-edit hvr-icon"></i> &nbsp TEST </a>
+
+				<hr class="sidebar-hr">
+
+				<a class="nav-link hvr-icon-back" id="navLearnButton"> <i class="fas fa-book hvr-icon"></i> &nbsp LEARN</a>
+
+				<hr class="sidebar-hr">
+				<a class="nav-link hvr-icon-back"  id="navDocButton"> <i class="fas fa-download hvr-icon"></i> &nbsp DOCUMENTS</a>
+				<hr class="sidebar-hr">
+				<a class="nav-link hvr-icon-back" id="navAboutButton" data-toggle="modal" data-target="#aboutModal"><i class="fas fa-info-circle hvr-icon"></i> &nbsp ABOUT</a>
+				<hr class="sidebar-hr">
+				<a class="nav-link hvr-icon-back" id="navContactButton" data-toggle="modal" data-target="#contactModal"><i class="fas fa-envelope hvr-icon"></i> &nbsp CONTACT</a>
+				<hr class="sidebar-hr">
+			</div>
+			<div  id="indexFooter">
+				<p class="center">Created by CM2 Tourachev, V.A. USNR. 2019.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="index-right-block">
+		<img src="../assets/img/img2.svg" id="seabee">
+
+		<div id="testContent">
+			<div class="content">
+				<h2 class="pageHeader darkFont fadeIn">Test Section</h2>
+				<hr>
+				<!-- <h2 class="darkFont">Lorem Ipsum Dolor</h2> -->
+				<p class="darkFont fadeIn">Here you can take a generated Seabee Combat Warfare test. The questions encompass all areas of the SCW Personal Qualification Standard. At this moment the quiz is set to be 100 questions that are randomly picked from a database. Currently the quiz is not timed. Once you hit submit you will get the correct amount of answers. Good Luck!</p>
+				<hr>
+
+				<div id="testParameters">
+					<p>Set the test parameters:</p>
+
+					<div class="dropdown" >
+						<div class="select">
+							<span>Select Time</span>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<input type="hidden" name="gender">
+						<ul class="dropdown-menu" id="timeDropdown">
+							<li id="1">1 min (Default)</li>
+							<li id="5">5 min</li>
+							<li id="10">10 min</li>
+							<li id="15">15 min</li>
+							<li id="30">30 min</li>
+							<li id="60">60 min</li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+						<div class="select">
+							<span>Select Amount of Question</span>
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<input type="hidden" name="gender">
+						<ul class="dropdown-menu" id="questionsDropdown">
+							<li id="2">2 (Default)</li>							
+							<li id="5">5</li>
+							<li id="10">10</li>
+							<li id="15">15</li>
+							<li id="30">30</li>
+							<li id="60">60</li>
+							<li id="100">100</li>
+						</ul>
+					</div>
+					<hr>	
+				</div>
+				<h3 id="timer" class="invisible"> You have <span id="time"></span> minutes left!</h3>
+				<button id="generate" class="btn btn-dark btn-block">Generate Test</button>   
+				<br>
+				<div id="accordion" ></div>
+				<button id="submitButton" class="invisible btn btn-dark btn-block">Submit</button>
+				<hr>
+				<div id="results"></div>
+			</div>
+		</div>
+
+		<div id="learnContent">
+			<div class="pageBlock content">
+				<h2 class="pageHeader darkFont fadeIn">Learning Section</h2>
+				<hr>
+				
+				<h3>Lorem Ipsum Dolor</h3>
+				<ul>
+						<li><a href="">SCW Vol1</a></li>
+						<li></li>
+						<li></li>
+					</ul>
+				<p class="fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+		<div id="docuContent">
+			<div class="pageBlock content">
+				<h2 class="pageHeader darkFont fadeIn">Downloads</h2>
+				<hr>
+				
+				<h3>Useful Stuff:</h3>
+				<ul>
+					<li><a href="">SCW Vol1</a></li>
+					<li><a href="">SCW Vol2</a></li>
+					<li><a href="">SCW PQS</a></li>
+				</ul>
+				<p class="fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+
+
+		<!-- ABOUT Modal -->
+		<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">About</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores placeat molestiae mollitia recusandae. Ab earum nulla laboriosam vitae, accusamus asperiores nemo, molestias beatae blanditiis est, enim possimus nisi iste.
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="closeAboutButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--CONTACT Modal -->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">About</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores placeat molestiae mollitia recusandae. Ab earum nulla laboriosam vitae, accusamus asperiores nemo, molestias beatae blanditiis est, enim possimus nisi iste.
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="closeAboutButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<% include partials/footer.ejs %>
