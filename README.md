@@ -14,7 +14,7 @@ Testing:
 
 Data collection:  
 ⋅ The app collects the statistics from tests taken by the user and displays them in the profile area split by topic.  
-⋅ The app displays which areas are suffering and shows a genral dynamic of test results over time.  
+⋅ The app displays which areas are suffering and shows a general dynamic of test results over time.  
 
 ## Current Status
 ⋅ The app is fully usable with the initial bank of questions.  
