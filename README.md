@@ -1,12 +1,10 @@
 # Naval Warfare Pin Testing Application
  
-## This is an application in development.
+The goal of this application is to provide sailors a tool they can utilize for Naval Warfare studying without the need to be connected to the internet or use the Common Access Card giving them a greater freedom of education as a significant portion of the material in use can be For Official Use Only, thus limited from being published to the public.
 
 ## Stack
 - ElectronJS
 - SQLite3
-
-The goal of this application is to provide sailors a tool they can utilize for Naval Warfare studying without the need to be connected to the internet or use the Common Access Card giving them a greater freedom of education as a significant portion of the material in use can be For Official Use Only, thus limited from being published to the public.
 
 ## Current Functionality
 
