@@ -10,7 +10,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "jquery": "^3.4.1",
     "knex": "^0.19.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "path": "^0.12.7",
     "sass": "^1.22.9",
     "sqlite3": "^4.1.0"
